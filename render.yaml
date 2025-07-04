@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: tilda-webhook
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn webhook_test:app
+    plan: free
